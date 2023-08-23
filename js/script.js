@@ -40,3 +40,21 @@ if (menuLinks.length > 0) {
     }
 }
 //__________________________________________________________________
+//Header Scroll_____________________________________________________
+
+let currentScroll;
+
+window.addEventListener('scroll', scroll_scroll);
+function scroll_scroll() {
+    let src_value = currentScroll = scrollY;
+    let header = document.querySelector('header.header');
+    if (header !== null) {
+        if (src_value > 10) {
+            header.classList.add('_scroll');
+        } else {
+            header.classList.remove('_scroll');
+        }
+    }
+}
+
+//__________________________________________________________________

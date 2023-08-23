@@ -111,7 +111,7 @@ body.lock {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -145,6 +145,9 @@ body.lock {
 }
 .header__button:hover {
   background: rgb(255, 255, 255);
+}
+.header._scroll {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .menu__body {
